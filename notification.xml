@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File: app/src/main/res/layout/notification.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Header Section with Icon and Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <!-- Notification Icon -->
+        <ImageView
+            android:id="@+id/notif_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/baseline_add_location_24"
+            android:contentDescription="Waypoint Alert"
+            android:tint="#2196F3"/>
+
+        <!-- Title and App Name -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/notif_app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smart Waypoint Alert"
+                android:textSize="11sp"
+                android:textColor="#999999"
+                android:textAllCaps="true"/>
+
+            <TextView
+                android:id="@+id/notif_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waypoint Alert"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginTop="2dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Message/Reminder Section -->
+    <TextView
+        android:id="@+id/notif_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your reminder message will appear here"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:lineSpacingExtra="2dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Distance Info - FIXED: Changed TextView ID from notif_distance to notif_distance_text -->
+    <TextView
+        android:id="@+id/notif_distance_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🚗 Distance: 50 meters"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="#FF9800"
+        android:layout_marginBottom="12dp"
+        android:padding="8dp"
+        android:background="#FFF3E0"/>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Details Container - FIXED: Changed LinearLayout ID from notif_distance to notif_details_container -->
+    <LinearLayout
+        android:id="@+id/notif_details_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F5F5F5"
+        android:padding="12dp">
+
+        <!-- Distance Row -->
+        <LinearLayout
+            android:id="@+id/notif_distance_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/baseline_add_location_24"
+                android:tint="#666666"
+                android:contentDescription="Distance Icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance:"
+                android:textSize="13sp"
+                android:textColor="#666666"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/notif_distance_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 50 meters"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#FF9800"
+                android:layout_marginStart="4dp"/>
+
+        </LinearLayout>
+
+        <!-- Radius Row -->
+        <LinearLayout
+            android:id="@+id/notif_radius_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/baseline_add_location_24"
+                android:tint="#666666"
+                android:contentDescription="Radius Icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alert Radius:"
+                android:textSize="13sp"
+                android:textColor="#666666"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/notif_radius_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 100 meters"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                android:layout_marginStart="4dp"/>
+
+        </LinearLayout>
+
+        <!-- Time Row -->
+        <LinearLayout
+            android:id="@+id/notif_time_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/baseline_add_location_24"
+                android:tint="#666666"
+                android:contentDescription="Time Icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alert Time:"
+                android:textSize="13sp"
+                android:textColor="#666666"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/notif_time_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Now"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#4CAF50"
+                android:layout_marginStart="4dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Action Hint -->
+    <TextView
+        android:id="@+id/notif_action_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap to open Waypoint Monitor"
+        android:textSize="11sp"
+        android:textColor="#999999"
+        android:gravity="center"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>

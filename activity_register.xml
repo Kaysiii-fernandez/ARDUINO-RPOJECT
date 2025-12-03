@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFC0CB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- First Name -->
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:hint="First Name"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#D81B60"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Last Name -->
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white"
+            android:hint="Last Name"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#D81B60"
+            android:textStyle="bold"/>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#D81B60"
+            android:textStyle="bold"/>
+
+        <!-- Password with toggle -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:background="@android:color/white">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#D81B60"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/btnTogglePassword"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:src="@drawable/ic_baseline_visibility_off_24"
+                android:contentDescription="Toggle Password"/>
+        </LinearLayout>
+
+        <!-- Confirm Password with toggle -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:background="@android:color/white">
+
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#D81B60"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/btnToggleConfirmPassword"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:src="@drawable/ic_baseline_visibility_off_24"
+                android:contentDescription="Toggle Confirm Password"/>
+        </LinearLayout>
+
+        <!-- Create Account Button -->
+        <Button
+            android:id="@+id/btnCreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:text="Create Account"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <!-- Facebook Login -->
+        <Button
+            android:id="@+id/btnfacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:text="Continue with Facebook"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <!-- Google Login -->
+        <Button
+            android:id="@+id/btngoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:text="Continue with Google"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</ScrollView>

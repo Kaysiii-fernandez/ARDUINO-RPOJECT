@@ -1,0 +1,13 @@
+<resources>
+    <color name="pink">#FFB3D9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="background">#FFC0CB</color>
+    <color name="primaryText">#000000</color>
+    <color name="hintText">#7f7f7f</color>
+    <color name="inputBackground">#D9D9D9</color>
+    <color name="border">#CCCCCC</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="darkpink">#C11C84</color>
+    <color name="Dodgerblue">#2196f3 </color>
+</resources>
