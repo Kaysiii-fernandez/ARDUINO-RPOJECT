@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "876671990330",
+    "project_id": "arduino-8a44d",
+    "storage_bucket": "arduino-8a44d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876671990330:android:0c56eebed99e0133b99303",
+        "android_client_info": {
+          "package_name": "example.arduino"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHaDahEm6yR0d00yyN_w-k6_2FZN4cSVc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
